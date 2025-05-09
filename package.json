@@ -1,0 +1,51 @@
+{
+  "name": "crud---typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "NODE_ENV=development node --inspect dist/src/server.js",
+    "dev":"NODE_ENV=development npx tsx --watch src/server.ts",
+    "migrate:create": "node_modules/knex/bin/cli.js migrate:make --knexfile knexfile.ts -x ts",
+    "db:migrate": "NODE_ENV=development node_modules/knex/bin/cli.js migrate:latest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@eslint/json": "^0.12.0",
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.15.16",
+    "dotenv": "^16.5.0",
+    "eslint": "^9.26.0",
+    "express": "^5.1.0",
+    "globals": "^16.1.0",
+    "install": "^0.13.0",
+    "nodemon": "^3.1.10",
+    "npm": "^10.9.2",
+    "prettier": "^3.5.3",
+    "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.32.0"
+  },
+  "dependencies": {
+    "@types/bcrypt": "^5.0.2",
+    "@types/body-parser": "^1.19.5",
+    "@types/jsonwebtoken": "^9.0.9",
+    "@types/multer": "^1.4.12",
+    "bcrypt": "^5.1.1",
+    "body-parser": "^2.2.0",
+    "cloudinary": "^2.6.1",
+    "concurrently": "^9.1.2",
+    "i": "^0.3.7",
+    "jsonwebtoken": "^9.0.2",
+    "knex": "^3.1.0",
+    "multer": "^1.4.5-lts.2",
+    "objection": "^3.1.5",
+    "pg": "^8.15.6",
+    "sharp": "^0.34.1",
+    "winston": "^3.17.0"
+  }
+}
